@@ -27,6 +27,21 @@ struct SidebarView: View {
                     }
                 }
             }
+            Section("Tags"){
+                ForEach(tagFilters) { filter in
+                    NavigationLink(value: filter){
+                        Label(filter.name, systemImage: filter.icon)
+                    }
+                }
+            }
+        }
+        .toolbar{
+            Button{
+                dataController.deleteAll()
+                dataController.createSampoleData()
+            } label: {
+                Label("ADD SAMPLES", systemImage: "flame")
+            }
         }
         
     }
