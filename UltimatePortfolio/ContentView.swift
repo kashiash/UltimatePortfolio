@@ -15,7 +15,7 @@ struct ContentView: View {
         var allIssues: [Issue]
 
         if let tag = filter.tag {
-            allIssues = tag.issues?.allObjects as? [Issue] ?? []()
+            allIssues = tag.issues?.allObjects as? [Issue] ?? []
         } else {
             let request = Issue.fetchRequest()
             request.predicate = NSPredicate(format: "modificationDate > %@", filter.minModificationDate as NSDate)
@@ -26,13 +26,12 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Content!")
+        List {
+            ForEach(issues) { issue in
+                IssueRow(issue: issue)
+            }
         }
-        .padding()
+        .navigationTitle("Issues")
     }
 }
 

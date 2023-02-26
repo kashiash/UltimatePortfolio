@@ -24,12 +24,12 @@ extension Issue {
     var issueModificationDate: Date {
         modificationDate ?? .now
     }
-    
+
     var issueTags: [Tag] {
         let result = tags?.allObjects as? [Tag] ?? []
         return result.sorted()
     }
-    
+
     static var example: Issue {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext
@@ -41,7 +41,6 @@ extension Issue {
         issue.creationDate = .now
         return issue
     }
-    
 }
 
 extension Issue: Comparable {
