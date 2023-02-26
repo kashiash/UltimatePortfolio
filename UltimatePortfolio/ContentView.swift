@@ -30,8 +30,16 @@ struct ContentView: View {
             ForEach(issues) { issue in
                 IssueRow(issue: issue)
             }
+            .onDelete(perform: delete)
         }
         .navigationTitle("Issues")
+    }
+    
+    func delete(_ offsets: IndexSet) {
+        for offset in offsets {
+            let item = issues[offset]
+            dataController.delete(item)
+        }
     }
 }
 
