@@ -13,7 +13,10 @@ class DataController :ObservableObject {
     @Published var selectedFilter: Filter? = Filter.all
     @Published var selectedIssue: Issue?
     
+    @Published var filterText = ""
+    
     private var saveTask: Task<Void,Error>?
+    
     
     
     static var preview: DataController = {
@@ -115,5 +118,27 @@ class DataController :ObservableObject {
         delete(deleteIssuesRequest)
         
         save()
+    }
+    
+    func issuesForSelectedFilter() -> [Issue] {
+        let filter = selectedFilter ?? .all
+        var allIssues: [Issue]
+        
+        if let tag = filter.tag {
+            allIssues = tag.issues?.allObjects as? [Issue] ?? []
+        } else {
+            let request = Issue.fetchRequest()
+            request.predicate = NSPredicate(format: "modificationDate > %@", filter.minModificationDate as NSDate)
+            allIssues = (try? container.viewContext.fetch(request)) ?? []
+        }
+        let trimmedFilterText = filterText.trimmingCharacters(in: .whitespaces)
+        if trimmedFilterText.isEmpty == false{
+            allIssues = allIssues.filter{
+                $0.issueTitle.localizedCaseInsensitiveContains(filterText) ||
+                $0.issueContent.localizedCaseInsensitiveContains(filterText)
+                
+            }
+        }
+        return allIssues.sorted()
     }
 }

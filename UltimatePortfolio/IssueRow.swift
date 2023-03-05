@@ -16,6 +16,7 @@ struct IssueRow: View {
             HStack {
                 Image(systemName: "exclamationmark.circle")
                     .imageScale(.large)
+                    .foregroundColor(issue.completed ? .black : .red)
                     .opacity(issue.priority == 2 ? 1 : 0)
 
                 VStack(alignment: .leading) {
