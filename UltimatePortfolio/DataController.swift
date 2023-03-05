@@ -13,10 +13,12 @@ class DataController :ObservableObject {
     @Published var selectedFilter: Filter? = Filter.all
     @Published var selectedIssue: Issue?
     
+    private var saveTask: Task<Void,Error>?
+    
     
     static var preview: DataController = {
         let dataController = DataController(inMemory: true)
-        dataController.createSampoleData()
+        dataController.createSampleData()
         return dataController
     }()
     
@@ -40,7 +42,7 @@ class DataController :ObservableObject {
       
     }
     
-    func createSampoleData(){
+    func createSampleData(){
         let viewContext = container.viewContext
         
         for i in 1...5{
@@ -69,6 +71,16 @@ class DataController :ObservableObject {
         objectWillChange.send()
         container.viewContext.delete(object)
         save()
+    }
+    
+    func queueSave(){
+        saveTask?.cancel()
+        print("Queuing save \(Date())")
+        saveTask = Task { @MainActor in
+            try await Task.sleep(for: .seconds(3))
+            save()
+            print("Saved!")
+        }
     }
     
     func missingTags(from issue: Issue) -> [Tag] {
