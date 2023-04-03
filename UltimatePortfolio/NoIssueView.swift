@@ -15,9 +15,8 @@ struct NoIssueView: View {
         Text("No Issue Selected")
             .font(.title)
             .foregroundStyle(.secondary)
-        Button("New Issue"){
-            // Czarny kod bedzie tutaj
-        }
+        
+        Button("New Issue", action: dataController.newIssue)
     }
 }
 
