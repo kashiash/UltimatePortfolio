@@ -23,7 +23,9 @@ struct IssueRow: View {
                     Text(issue.issueTitle)
                         .font(.headline)
                         .lineLimit(1)
-
+                    Text(issue.issueTaskAddress)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(1)
                     Text(issue.issueTagsList)
                         .foregroundStyle(.secondary)
                         .lineLimit(1)
@@ -34,7 +36,8 @@ struct IssueRow: View {
                 VStack(alignment: .trailing) {
                     Text(issue.issueCreationDate.formatted(date: .numeric, time: .omitted))
                         .font(.subheadline)
-
+                    Text(issue.issueDueDate.formatted(date: .numeric, time: .standard))
+                        .font(.subheadline)
                     if issue.completed {
                         Text("CLOSED")
                             .font(.body.smallCaps())

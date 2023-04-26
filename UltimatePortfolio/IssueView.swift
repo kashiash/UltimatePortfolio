@@ -17,11 +17,16 @@ struct IssueView: View {
                 VStack(alignment: .leading) {
                     TextField("Title", text: $issue.issueTitle, prompt: Text("Enter the issue title here"))
                         .font(.title)
+                    Text("**Start Date:** \(issue.issueStartDate.formatted(date: .long, time: .shortened))")
+                        .foregroundStyle(.primary)
 
-                    Text("**Modified:** \(issue.issueModificationDate.formatted(date: .long, time: .shortened))")
-                        .foregroundStyle(.secondary)
+                    Text("**Due Date:** \(issue.issueDueDate.formatted(date: .long, time: .shortened))")
+                        .foregroundStyle(.primary)
                     Text("**Status:** \(issue.issueStatus)")
                         .foregroundStyle(.secondary)
+                    Text("**Address:** \(issue.issueTaskAddress)")
+                        .foregroundStyle(.primary)
+
 
                 }
 
@@ -70,12 +75,33 @@ struct IssueView: View {
                         .foregroundStyle(.secondary)
 
                     TextField("Description", text: $issue.issueContent, prompt: Text("Enter the issue description here"), axis: .vertical)
+                    Text("**Modified:** \(issue.issueModificationDate.formatted(date: .long, time: .shortened))")
+                        .foregroundStyle(.tertiary)
                 }
             }
         }
         .disabled(issue.isDeleted)
         .onReceive(issue.objectWillChange) {_ in
             dataController.queueSave()
+        }
+        .onSubmit (dataController.save)
+        
+        .toolbar{
+            Menu{
+                Button{
+                    UIPasteboard.general.string = issue.title
+                } label : {
+                    Label("Copy Issue Title",systemImage: "doc.on.doc")
+                }
+                Button{
+                    issue.completed.toggle()
+                    dataController.save()
+                } label: {
+                    Label(issue.completed ? "Re-open issue" : "Close issue",systemImage: "bubble.left.and.exclamationmark.bubble.right")
+                }
+            } label: {
+                Label("Actions",systemImage: "ellipsis.circle")
+            }
         }
 //        .onChange(of: issue) {_ in
 //            dataController.queueSave()

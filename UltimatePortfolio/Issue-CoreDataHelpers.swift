@@ -17,12 +17,24 @@ extension Issue {
         set { content = newValue }
     }
 
+    var issueTaskAddress: String {
+        get { taskAddress ?? "" }
+        set { taskAddress = newValue }
+    }
+    
     var issueCreationDate: Date {
         creationDate ?? .now
     }
 
     var issueModificationDate: Date {
         modificationDate ?? .now
+    }
+    
+    var issueDueDate: Date {
+        dueDate ?? .now
+    }
+    var issueStartDate: Date {
+        startDate ?? .now
     }
 
     var issueTags: [Tag] {
@@ -55,8 +67,11 @@ extension Issue {
         let issue = Issue(context: viewContext)
         issue.title = "Example Issue"
         issue.content = "This is an example issue."
+        issue.issueTaskAddress = "Plac Defilad 1, Warszawa"
         issue.priority = 2
         issue.creationDate = .now
+        issue.startDate = .now
+        issue.dueDate = .now
         return issue
     }
 }
