@@ -49,6 +49,13 @@ extension Issue {
             return "Open"
         }
     }
+    var issueFormattedCreationDate: String {
+        issueCreationDate.formatted(date: .numeric, time: .omitted)
+    }
+    
+    var issueFormattedDueDate : String{
+        issueDueDate.formatted(date: .numeric, time: .standard)
+    }
     
     var issueTagsList: String {
         guard let tags else { return "No tags" }

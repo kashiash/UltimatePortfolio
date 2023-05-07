@@ -40,7 +40,7 @@ struct AwardsView: View {
                     }
                 }
             }
-            .navigationTitle("Pierdoły")
+            .navigationTitle("Awards")
         }
         .alert(awardTitle, isPresented: $showingAwardDetails) {
         } message: {
