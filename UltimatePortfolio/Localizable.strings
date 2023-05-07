@@ -1,0 +1,80 @@
+"**Address:** %@" = "**Address:** %@";
+
+
+"**Due Date:** %@" = "**Due Date:** %@";
+
+
+"**Modified:** %@" = "**Modified:** %@";
+
+
+"**Start Date:** %@" = "**Start Date:** %@";
+
+
+"**Status:** %@" = "**Status:** %@";
+
+
+"All" = "All";
+
+
+"Basic Information" = "Basic Information";
+
+
+"Closed" = "Closed";
+
+"CLOSED" = "CLOSED";
+
+"Date Created" = "Date Created";
+
+"Date Modified" = "Date Modified";
+
+"Enter the issue description here" = "Enter the issue description here";
+
+"Enter the issue title here" = "Enter the issue title here";
+
+"High" = "High";
+
+"Low" = "Low";
+
+"Medium" = "Medium";
+
+"Newest to Oldest" = "Newest to Oldest";
+
+"No Issue Selected" = "No Issue Selected";
+
+"Oldest to Newest" = "Oldest to Newest";
+
+"Open" = "Open";
+
+"%lld issues" = "%lld issues"
+
+"Filters" = "Filters";
+"Smart Filters" = "Smart Filters";
+"Tags" = "Tags";
+"Issues" = "Issues";
+"Turn Filter On" = "Turn Filter On";
+"Turn Filter Off" = "Turn Filter Off";
+"Sort By" = "Sort By";
+"Rename tag" = "Rename tag";
+"Details" = "Details";
+"New Issue" = "New Issue";
+"Filter issues, or type # to add tags" = "Filter issues, or type # to add tags";
+"Filter" = "Filter";
+"Add tag" = "Add tag";
+"Show awards" = "Show awards";
+"Awards" = "Awards";
+"Priority" = "Priority";
+"Actions" = "Actions";
+"Copy Issue Title" = "Copy Issue Title";
+"Close Issue" = "Close Issue";
+"Add Tags" = "Add Tags";
+"Re-open Issue" = "Re-open Issue";
+"Rename" = "Rename";
+"Delete" = "Delete";
+"OK" = "OK";
+"Cancel" = "Cancel";
+"New name" = "New name";
+"New tag" = "New tag";
+"New issue" = "New issue";
+"Recent Issues" = "Recent Issues ww"
+"All Issues" = "All Issues zz"
+"ADD SAMPLES" = "ADD SAMPLES";
