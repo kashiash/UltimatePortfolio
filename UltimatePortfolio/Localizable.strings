@@ -1,8 +1,3 @@
-"**Address:** %@" = "**Address:** %@";
-"**Due Date:** %@" = "**Due Date:** %@";
-"**Modified:** %@" = "**Modified:** %@";
-"**Start Date:** %@" = "**Start Date:** %@";
-"**Status:** %@" = "**Status:** %@";
 "All" = "All";
 "Basic Information" = "Basic Information";
 "Closed" = "Closed";
@@ -18,7 +13,6 @@
 "No Issue Selected" = "No Issue Selected";
 "Oldest to Newest" = "Oldest to Newest";
 "Open" = "Open";
-"%lld issues" = "%lld issues"
 "Filters" = "Filters";
 "Smart Filters" = "Smart Filters";
 "Tags" = "Tags";
@@ -47,6 +41,14 @@
 "New name" = "New name";
 "New tag" = "New tag";
 "New issue" = "New issue";
-"Recent Issues" = "Recent Issues ww"
-"All Issues" = "All Issues zz"
+"Recent Issues" = "Recent Issues ww";
+"All Issues" = "All Issues";
 "ADD SAMPLES" = "ADD SAMPLES";
+"%lld issues" = "%lld issues";
+"**Address:** %@" = "**Address:** %@";
+"**Due Date:** %@" = "**Due Date:** %@";
+"**Modified:** %@" = "**Modified:** %@";
+"**Start Date:** %@" = "**Start Date:** %@";
+"**Status:** %@" = "**Status:** %@";
+
+
