@@ -1,3 +1,20 @@
+/* Sidebar View*/
+"Filters" = "Filters";
+"Smart Filters" = "Smart Filters";
+"Tags" = "Tags";
+"Issues" = "Issues";
+
+/*Filters*/
+"Recent Issues" = "Recent Issues ww";
+"All Issues" = "All Issues";
+"Turn Filter On" = "Turn Filter On";
+"Turn Filter Off" = "Turn Filter Off";
+"Sort By" = "Sort By";
+"Filter issues, or type # to add tags" = "Filter issues, or type # to add tags";
+"Filter" = "Filter";
+
+
+
 "All" = "All";
 "Basic Information" = "Basic Information";
 "Closed" = "Closed";
@@ -13,18 +30,12 @@
 "No Issue Selected" = "No Issue Selected";
 "Oldest to Newest" = "Oldest to Newest";
 "Open" = "Open";
-"Filters" = "Filters";
-"Smart Filters" = "Smart Filters";
-"Tags" = "Tags";
-"Issues" = "Issues";
-"Turn Filter On" = "Turn Filter On";
-"Turn Filter Off" = "Turn Filter Off";
-"Sort By" = "Sort By";
+
+
 "Rename tag" = "Rename tag";
 "Details" = "Details";
 "New Issue" = "New Issue";
-"Filter issues, or type # to add tags" = "Filter issues, or type # to add tags";
-"Filter" = "Filter";
+
 "Add tag" = "Add tag";
 "Show awards" = "Show awards";
 "Awards" = "Awards";
@@ -41,14 +52,15 @@
 "New name" = "New name";
 "New tag" = "New tag";
 "New issue" = "New issue";
-"Recent Issues" = "Recent Issues ww";
-"All Issues" = "All Issues";
-"ADD SAMPLES" = "ADD SAMPLES";
+
+
 "%lld issues" = "%lld issues";
 "**Address:** %@" = "**Address:** %@";
 "**Due Date:** %@" = "**Due Date:** %@";
 "**Modified:** %@" = "**Modified:** %@";
 "**Start Date:** %@" = "**Start Date:** %@";
 "**Status:** %@" = "**Status:** %@";
+
+"ADD SAMPLES" = "ADD SAMPLES";
 
 
