@@ -1,52 +1,24 @@
 "**Address:** %@" = "**Address:** %@";
-
-
 "**Due Date:** %@" = "**Due Date:** %@";
-
-
 "**Modified:** %@" = "**Modified:** %@";
-
-
 "**Start Date:** %@" = "**Start Date:** %@";
-
-
 "**Status:** %@" = "**Status:** %@";
-
-
 "All" = "All";
-
-
 "Basic Information" = "Basic Information";
-
-
 "Closed" = "Closed";
-
 "CLOSED" = "CLOSED";
-
 "Date Created" = "Date Created";
-
 "Date Modified" = "Date Modified";
-
 "Enter the issue description here" = "Enter the issue description here";
-
 "Enter the issue title here" = "Enter the issue title here";
-
 "High" = "High";
-
 "Low" = "Low";
-
 "Medium" = "Medium";
-
 "Newest to Oldest" = "Newest to Oldest";
-
 "No Issue Selected" = "No Issue Selected";
-
 "Oldest to Newest" = "Oldest to Newest";
-
 "Open" = "Open";
-
 "%lld issues" = "%lld issues"
-
 "Filters" = "Filters";
 "Smart Filters" = "Smart Filters";
 "Tags" = "Tags";

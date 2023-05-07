@@ -11,7 +11,7 @@
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
-			<string><lld/string>
+			<string>lld</string>
 			<key>zero</key>
 			<string>No issues</string>
 			<key>1</key>
