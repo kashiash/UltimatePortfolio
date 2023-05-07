@@ -22,7 +22,7 @@ struct IssueView: View {
 
                     Text("**Due Date:** \(issue.issueDueDate.formatted(date: .long, time: .shortened))")
                         .foregroundStyle(.primary)
-                    Text("**Status:** \(issue.issueStatus)")
+                    Text("**Status:** \(issue.issueStatus)") //MARK LocalizedStringKey(issue.issueStatus) ??
                         .foregroundStyle(.secondary)
                     Text("**Address:** \(issue.issueTaskAddress)")
                         .foregroundStyle(.primary)

@@ -1,0 +1,61 @@
+/* Sidebar View*/
+"Filters" = "Filtry";
+"Smart Filters" = "Inteligentne filtry";
+"Tags" = "Tagi";
+"Issues" = "Zadania";
+
+/*Filters*/
+"Recent Issues" = "Najnowsze zadania";
+"All Issues" = "Wszystkie zadania";
+"Turn Filter On" = "Włącz filtr";
+"Turn Filter Off" = "Wyłącz filtr";
+"Sort By" = "Sortuj według";
+"Filter issues, or type # to add tags" = "Filtruj zadania lub wpisz #, aby dodać tagi";
+"Filter" = "Filtruj";
+
+"All" = "Wszystkie";
+"Basic Information" = "Podstawowe informacje";
+"Closed" = "Zamknięte";
+"CLOSED" = "ZAMKNIĘTE";
+"Date Created" = "Data utworzenia";
+"Date Modified" = "Data modyfikacji";
+"Enter the issue description here" = "Wprowadź opis zadania";
+"Enter the issue title here" = "Wprowadź tytuł zadania";
+"High" = "Wysoki";
+"Low" = "Niski";
+"Medium" = "Średni";
+"Newest to Oldest" = "Od najnowszych";
+"No Issue Selected" = "Nie wybrano zadania";
+"Oldest to Newest" = "Od najstarszych";
+"Open" = "Otwarte";
+"Description goes here" = "Opis zadania";
+
+"Rename tag" = "Zmień nazwę tagu";
+"Details" = "Szczegóły";
+"New Issue" = "Nowe zadanie";
+
+"Add tag" = "Dodaj tag";
+"Show awards" = "Pokaż nagrody";
+"Awards" = "Nagrody";
+"Priority" = "Priorytet";
+"Actions" = "Akcje";
+"Copy Issue Title" = "Kopiuj tytuł zadania";
+"Close Issue" = "Zamknij zadanie";
+"Add Tags" = "Dodaj tagi";
+"Re-open Issue" = "Ponownie otwórz zadanie";
+"Rename" = "Zmień nazwę";
+"Delete" = "Usuń";
+"OK" = "OK";
+"Cancel" = "Anuluj";
+"New name" = "Nowa nazwa";
+"New tag" = "Nowy tag";
+"New issue" = "Nowe zadanie";
+
+"%lld issues" = "%lld zadania";
+"**Address:** %@" = "**Adres:** %@";
+"**Due Date:** %@" = "**Termin:** %@";
+"**Modified:** %@" = "**Zmodyfikowano:** %@";
+"**Start Date:** %@" = "**Data rozpoczęcia:** %@";
+"**Status:** %@" = "**Status:** %@";
+
+"ADD SAMPLES" = "DODAJ PRZYKŁADY";
