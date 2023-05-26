@@ -25,4 +25,8 @@ struct Filter: Identifiable, Hashable {
     static func ==(lhs: Filter, rhs: Filter) -> Bool {
         lhs.id == rhs.id
     }
+    
+    var activeIssuesCount: Int {
+        tag?.tagActiveIssues.count ?? 0
+    }
 }
