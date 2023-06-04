@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     @EnvironmentObject var dataController: DataController
-    
+
     var body: some View {
         VStack {
             if let issue = dataController.selectedIssue {
@@ -21,7 +21,6 @@ struct DetailView: View {
         .navigationTitle("Details")
     }
 }
-
 
 extension View {
     func inlineNavigationBar() -> some View {
