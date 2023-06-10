@@ -15,15 +15,15 @@ struct AwardsView: View {
     @State private var showingAwardDetails = false
 
     var columns: [GridItem] {
-        [GridItem(.adaptive(minimum: 100,maximum: 100))]
+        [GridItem(.adaptive(minimum: 100, maximum: 100))]
     }
 
     var body: some View {
-        NavigationStack{
-            ScrollView{
-                LazyVGrid(columns:columns) {
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: columns) {
                     ForEach(Award.allAwards) { award in
-                        Button{
+                        Button {
                             selectedAward = award
                             showingAwardDetails = true
                         } label: {
@@ -32,7 +32,7 @@ struct AwardsView: View {
                                 .scaledToFit()
                                 .padding()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(color(for: award) )    
+                                .foregroundColor(color(for: award) )
                         }
                         .accessibilityLabel(label(for: award))
                         .accessibilityHint(award.description)

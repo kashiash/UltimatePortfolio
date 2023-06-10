@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Award: Decodable, Identifiable {
     var id: String { name }
     var name: String
@@ -16,7 +15,7 @@ struct Award: Decodable, Identifiable {
     var criterion: String
     var value: Int
     var image: String
-    
+
     static let allAwards = Bundle.main.decode("Awards.json", as: [Award].self)
     static let example = allAwards[0]
 }

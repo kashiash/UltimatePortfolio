@@ -21,7 +21,7 @@ extension Issue {
         get { taskAddress ?? "" }
         set { taskAddress = newValue }
     }
-    
+
     var issueCreationDate: Date {
         creationDate ?? .now
     }
@@ -29,7 +29,7 @@ extension Issue {
     var issueModificationDate: Date {
         modificationDate ?? .now
     }
-    
+
     var issueDueDate: Date {
         dueDate ?? .now
     }
@@ -41,7 +41,7 @@ extension Issue {
         let result = tags?.allObjects as? [Tag] ?? []
         return result.sorted()
     }
-    
+
     var issueStatus: String {
         if completed {
             return "Closed"
@@ -52,11 +52,11 @@ extension Issue {
     var issueFormattedCreationDate: String {
         issueCreationDate.formatted(date: .numeric, time: .omitted)
     }
-    
-    var issueFormattedDueDate : String{
+
+    var issueFormattedDueDate: String {
         issueDueDate.formatted(date: .numeric, time: .standard)
     }
-    
+
     var issueTagsList: String {
         guard let tags else { return "No tags" }
 
@@ -84,7 +84,7 @@ extension Issue {
 }
 
 extension Issue: Comparable {
-    public static func <(lhs: Issue, rhs: Issue) -> Bool {
+    public static func < (lhs: Issue, rhs: Issue) -> Bool {
         let left = lhs.issueTitle.localizedLowercase
         let right = rhs.issueTitle.localizedLowercase
 

@@ -19,14 +19,12 @@ struct IssueView: View {
                         .font(.title)
                     Text("**Start Date:** \(issue.issueStartDate.formatted(date: .long, time: .shortened))")
                         .foregroundStyle(.primary)
-
                     Text("**Due Date:** \(issue.issueDueDate.formatted(date: .long, time: .shortened))")
                         .foregroundStyle(.primary)
-                    Text("**Status:** \(issue.issueStatus)") //MARK LocalizedStringKey(issue.issueStatus) ??
+                    Text("**Status:** \(issue.issueStatus)") // MARK: LocalizedStringKey(issue.issueStatus) ??
                         .foregroundStyle(.secondary)
                     Text("**Address:** \(issue.issueTaskAddress)")
                         .foregroundStyle(.primary)
-
                 }
 
                 Picker("Priority", selection: $issue.priority) {
@@ -41,8 +39,10 @@ struct IssueView: View {
                     Text("Basic Information")
                         .font(.title2)
                         .foregroundStyle(.secondary)
-                    
-                    TextField("Description", text: $issue.issueContent, prompt: Text("Enter the issue description here"), axis: .vertical)
+
+                    TextField("Description", text: $issue.issueContent,
+                              prompt: Text("Enter the issue description here"),
+                              axis: .vertical)
                     Text("**Modified:** \(issue.issueModificationDate.formatted(date: .long, time: .shortened))")
                         .foregroundStyle(.tertiary)
                 }
@@ -52,9 +52,9 @@ struct IssueView: View {
         .onReceive(issue.objectWillChange) {_ in
             dataController.queueSave()
         }
-        .onSubmit (dataController.save)
-        
-        .toolbar{
+        .onSubmit(dataController.save)
+
+        .toolbar {
             IssueViewToolbar(issue: issue)
         }
     }
