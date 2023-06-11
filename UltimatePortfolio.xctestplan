@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "9DD6577A-202A-44B8-90B0-0F27651F4D15",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:UltimatePortfolio.xcodeproj",
+      "identifier" : "3F0E1B1629AA29780068FC88",
+      "name" : "UltimatePortfolio"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:UltimatePortfolio.xcodeproj",
+        "identifier" : "76799C642A35F9B500583457",
+        "name" : "UltimatePortfolioTests"
+      }
+    }
+  ],
+  "version" : 1
+}
