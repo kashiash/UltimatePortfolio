@@ -105,74 +105,6 @@ class DataController: ObservableObject {
 
         try? viewContext.save()
     }
-    // swiftlint:disable:next function_body_length
-    func getRandomPolishAddress() -> String {
-        let addresses = [
-            "ul. Marszałkowska 1, 00-001 Warsaw, Poland",
-            "ul. Floriańska 23, 31-019 Kraków, Poland",
-            "ul. Świdnicka 18, 50-068 Wrocław, Poland",
-            "ul. Piotrkowska 155, 90-006 Łódź, Poland",
-            "ul. Słowackiego 16, 80-257 Gdańsk, Poland",
-            "ul. 3 Maja 12, 40-097 Katowice, Poland",
-            "ul. Grunwaldzka 67, 60-001 Poznań, Poland",
-            "ul. Basztowa 27, 35-005 Rzeszów, Poland",
-            "ul. Armii Krajowej 5, 70-001 Szczecin, Poland",
-            "ul. Karmelicka 8, 20-010 Lublin, Poland",
-            "ul. Mickiewicza 21, 05-123 Chotomów, Poland",
-            "ul. Piękna 46, 15-123 Białystok, Poland",
-            "ul. Kilińskiego 8, 25-123 Kielce, Poland",
-            "ul. Złota 61, 75-344 Koszalin, Poland",
-            "ul. Długa 29, 85-123 Bydgoszcz, Poland",
-            "ul. Wyszyńskiego 17, 58-123 Legnica, Poland",
-            "ul. Wojska Polskiego 56, 44-100 Gliwice, Poland",
-            "ul. Bohaterów 26, 95-123 Skierniewice, Poland",
-            "ul. Zielona 34, 48-123 Oława, Poland",
-            "ul. Sienkiewicza 42, 64-123 Leszno, Poland",
-            "ul. Nowy Świat 12, 00-400 Warsaw, Poland",
-            "ul. Krakowskie Przedmieście 20, 00-325 Warsaw, Poland",
-            "ul. Chmielna 33, 00-021 Warsaw, Poland",
-            "ul. Żelazna 45, 00-838 Warsaw, Poland",
-            "ul. Emilii Plater 9, 00-669 Warsaw, Poland",
-            "ul. Wilcza 23, 00-544 Warsaw, Poland",
-            "ul. Świętokrzyska 14, 00-050 Warsaw, Poland",
-            "ul. Sienna 59, 00-820 Warsaw, Poland",
-            "ul. Smolna 37, 00-375 Warsaw, Poland",
-            "ul. Wspólna 51, 00-687 Warsaw, Poland",
-            "ul. Mickiewicza 12, 40-092 Katowice, Poland",
-            "ul. Kościuszki 32, 41-902 Bytom, Poland",
-            "ul. 3 Maja 24, 43-300 Bielsko-Biała, Poland",
-            "ul. Krasińskiego 17, 44-100 Gliwice, Poland",
-            "ul. Sienkiewicza 45, 44-190 Knurów, Poland",
-            "ul. Powstańców 56, 42-200 Częstochowa, Poland",
-            "ul. Wyszyńskiego 26, 41-800 Zabrze, Poland",
-            "ul. Zamkowa 13, 42-600 Tarnowskie Góry, Poland",
-            "ul. Pocztowa 11, 43-400 Cieszyn, Poland",
-            "ul. Korfantego 8, 40-166 Katowice, Poland",
-            "Plac Wolności 1, 40-078 Katowice, Poland",
-            "Plac Grunwaldzki 2, 41-902 Bytom, Poland",
-            "Plac Ratuszowy 3, 43-300 Bielsko-Biała, Poland",
-            "Plac Piastowski 4, 44-100 Gliwice, Poland",
-            "Plac Wolności 5, 44-190 Knurów, Poland",
-            "Plac Biegańskiego 6, 42-200 Częstochowa, Poland",
-            "Plac Teatralny 7, 41-800 Zabrze, Poland",
-            "Plac Rynek 8, 42-600 Tarnowskie Góry, Poland",
-            "Plac Wolności 9, 43-400 Cieszyn, Poland",
-            "Plac Sejmu Śląskiego 10, 40-166 Katowice, Poland",
-            "Plac Wolności 1, 60-967 Poznań, Poland",
-            "Plac Mickiewicza 2, 60-770 Poznań, Poland",
-            "Plac Kolegiacki 3, 61-841 Poznań, Poland",
-            "Plac Wiosny Ludów 4, 61-831 Poznań, Poland",
-            "Plac Cyryla Ratajskiego 5, 61-752 Poznań, Poland",
-            "Plac Bernardyński 6, 61-839 Poznań, Poland",
-            "Plac Andersa 7, 61-894 Poznań, Poland",
-            "Plac Świętego Wojciecha 8, 61-108 Poznań, Poland",
-            "Plac Dąbrowskiego 9, 60-839 Poznań, Poland",
-            "Plac Wolności 10, 60-282 Poznań, Poland"
-        ]
-
-        let randomIndex = Int.random(in: 0..<addresses.count)
-        return addresses[randomIndex]
-    }
 
     func save() {
         saveTask?.cancel()
@@ -327,4 +259,76 @@ class DataController: ObservableObject {
         return false
         }
     }
+}
+
+extension DataController {
+    // swiftlint:disable:next function_body_length
+    func getRandomPolishAddress() -> String {
+        let addresses = [
+            "ul. Marszałkowska 1, 00-001 Warsaw, Poland",
+            "ul. Floriańska 23, 31-019 Kraków, Poland",
+            "ul. Świdnicka 18, 50-068 Wrocław, Poland",
+            "ul. Piotrkowska 155, 90-006 Łódź, Poland",
+            "ul. Słowackiego 16, 80-257 Gdańsk, Poland",
+            "ul. 3 Maja 12, 40-097 Katowice, Poland",
+            "ul. Grunwaldzka 67, 60-001 Poznań, Poland",
+            "ul. Basztowa 27, 35-005 Rzeszów, Poland",
+            "ul. Armii Krajowej 5, 70-001 Szczecin, Poland",
+            "ul. Karmelicka 8, 20-010 Lublin, Poland",
+            "ul. Mickiewicza 21, 05-123 Chotomów, Poland",
+            "ul. Piękna 46, 15-123 Białystok, Poland",
+            "ul. Kilińskiego 8, 25-123 Kielce, Poland",
+            "ul. Złota 61, 75-344 Koszalin, Poland",
+            "ul. Długa 29, 85-123 Bydgoszcz, Poland",
+            "ul. Wyszyńskiego 17, 58-123 Legnica, Poland",
+            "ul. Wojska Polskiego 56, 44-100 Gliwice, Poland",
+            "ul. Bohaterów 26, 95-123 Skierniewice, Poland",
+            "ul. Zielona 34, 48-123 Oława, Poland",
+            "ul. Sienkiewicza 42, 64-123 Leszno, Poland",
+            "ul. Nowy Świat 12, 00-400 Warsaw, Poland",
+            "ul. Krakowskie Przedmieście 20, 00-325 Warsaw, Poland",
+            "ul. Chmielna 33, 00-021 Warsaw, Poland",
+            "ul. Żelazna 45, 00-838 Warsaw, Poland",
+            "ul. Emilii Plater 9, 00-669 Warsaw, Poland",
+            "ul. Wilcza 23, 00-544 Warsaw, Poland",
+            "ul. Świętokrzyska 14, 00-050 Warsaw, Poland",
+            "ul. Sienna 59, 00-820 Warsaw, Poland",
+            "ul. Smolna 37, 00-375 Warsaw, Poland",
+            "ul. Wspólna 51, 00-687 Warsaw, Poland",
+            "ul. Mickiewicza 12, 40-092 Katowice, Poland",
+            "ul. Kościuszki 32, 41-902 Bytom, Poland",
+            "ul. 3 Maja 24, 43-300 Bielsko-Biała, Poland",
+            "ul. Krasińskiego 17, 44-100 Gliwice, Poland",
+            "ul. Sienkiewicza 45, 44-190 Knurów, Poland",
+            "ul. Powstańców 56, 42-200 Częstochowa, Poland",
+            "ul. Wyszyńskiego 26, 41-800 Zabrze, Poland",
+            "ul. Zamkowa 13, 42-600 Tarnowskie Góry, Poland",
+            "ul. Pocztowa 11, 43-400 Cieszyn, Poland",
+            "ul. Korfantego 8, 40-166 Katowice, Poland",
+            "Plac Wolności 1, 40-078 Katowice, Poland",
+            "Plac Grunwaldzki 2, 41-902 Bytom, Poland",
+            "Plac Ratuszowy 3, 43-300 Bielsko-Biała, Poland",
+            "Plac Piastowski 4, 44-100 Gliwice, Poland",
+            "Plac Wolności 5, 44-190 Knurów, Poland",
+            "Plac Biegańskiego 6, 42-200 Częstochowa, Poland",
+            "Plac Teatralny 7, 41-800 Zabrze, Poland",
+            "Plac Rynek 8, 42-600 Tarnowskie Góry, Poland",
+            "Plac Wolności 9, 43-400 Cieszyn, Poland",
+            "Plac Sejmu Śląskiego 10, 40-166 Katowice, Poland",
+            "Plac Wolności 1, 60-967 Poznań, Poland",
+            "Plac Mickiewicza 2, 60-770 Poznań, Poland",
+            "Plac Kolegiacki 3, 61-841 Poznań, Poland",
+            "Plac Wiosny Ludów 4, 61-831 Poznań, Poland",
+            "Plac Cyryla Ratajskiego 5, 61-752 Poznań, Poland",
+            "Plac Bernardyński 6, 61-839 Poznań, Poland",
+            "Plac Andersa 7, 61-894 Poznań, Poland",
+            "Plac Świętego Wojciecha 8, 61-108 Poznań, Poland",
+            "Plac Dąbrowskiego 9, 60-839 Poznań, Poland",
+            "Plac Wolności 10, 60-282 Poznań, Poland"
+        ]
+
+        let randomIndex = Int.random(in: 0..<addresses.count)
+        return addresses[randomIndex]
+    }
+
 }
