@@ -85,8 +85,8 @@
 		3F0E1B0E29AA29780068FC88 = {
 			isa = PBXGroup;
 			children = (
-				3F0E1B1929AA29780068FC88 /* UltimatePortfolio */,
 				3F0E1B1829AA29780068FC88 /* Products */,
+				3F0E1B1929AA29780068FC88 /* UltimatePortfolio */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,16 +101,15 @@
 		3F0E1B1929AA29780068FC88 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				76799C582A35CC2800583457 /* Configuration */,
-				76799C572A35CC1900583457 /* Localization */,
+				76799C542A35CBAD00583457 /* Models */,
+				76799C532A35CB4400583457 /* Views */,
+				76799C552A35CBD400583457 /* Controllers */,
 				76799C562A35CC1000583457 /* Extensions */,
+				76799C572A35CC1900583457 /* Localization */,
+				76799C582A35CC2800583457 /* Configuration */,
 				3F0E1B1E29AA29790068FC88 /* Assets.xcassets */,
 				3FFD901929E21CD70064EEE0 /* Colors.xcassets */,
-				76799C552A35CBD400583457 /* Controllers */,
-				76799C542A35CBAD00583457 /* Models */,
 				3F0E1B2129AA29790068FC88 /* Preview Content */,
-				3F0E1B1A29AA29780068FC88 /* UltimatePortfolioApp.swift */,
-				76799C532A35CB4400583457 /* Views */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
@@ -126,6 +125,7 @@
 		76799C532A35CB4400583457 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3F0E1B1A29AA29780068FC88 /* UltimatePortfolioApp.swift */,
 				3F0E1B1C29AA29780068FC88 /* ContentView.swift */,
 				3FFD901E29E21D3C0064EEE0 /* AwardsView.swift */,
 				76B543DE2A21BA4F000E7E3D /* ContentViewToolbar.swift */,
@@ -174,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				3FFD901829E21CD70064EEE0 /* Awards.json */,
-				3FBC7F4D2A083F5800E5A3FC /* Localizable.stringsdict */,
 				3FBC7F4A2A083F5200E5A3FC /* Localizable.strings */,
+				3FBC7F4D2A083F5800E5A3FC /* Localizable.stringsdict */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -183,9 +183,9 @@
 		76799C582A35CC2800583457 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				3F0E1B2029AA29790068FC88 /* UltimatePortfolio.entitlements */,
-				3F0E1B2F29AA4A690068FC88 /* Main.xcdatamodeld */,
 				3FCEE14B29AAB2B800C52773 /* Info.plist */,
+				3F0E1B2F29AA4A690068FC88 /* Main.xcdatamodeld */,
+				3F0E1B2029AA29790068FC88 /* UltimatePortfolio.entitlements */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
