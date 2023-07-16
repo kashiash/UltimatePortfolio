@@ -9,7 +9,7 @@ import XCTest
 import CoreData
 @testable import UltimatePortfolio
 
-final class BaseTestCase: XCTestCase {
+class BaseTestCase: XCTestCase {
 
     var dataController: DataController!
     var managedObjectContext: NSManagedObjectContext!
@@ -18,11 +18,5 @@ final class BaseTestCase: XCTestCase {
         dataController = DataController(inMemory: true)
         managedObjectContext = dataController.container.viewContext
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-
 
 }
