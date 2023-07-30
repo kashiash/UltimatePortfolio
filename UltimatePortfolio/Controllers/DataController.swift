@@ -76,7 +76,7 @@ class DataController: ObservableObject {
     /// - Parameter inMemory: Whether to store this data in temporary memory or not.
 
     init(inMemory: Bool = false) {
-        //container = NSPersistentCloudKitContainer(name: "Main")
+        // container = NSPersistentCloudKitContainer(name: "Main")
         container = NSPersistentCloudKitContainer(name: "Main", managedObjectModel: Self.model)
 
         // For testing and previewing purposes, we create a

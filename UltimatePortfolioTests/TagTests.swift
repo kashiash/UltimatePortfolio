@@ -30,9 +30,9 @@ final class TagTests: BaseTestCase {
         let tags = try managedObjectContext.fetch(request)
 
         dataController.delete(tags[0])
-        XCTAssertEqual(dataController.count(for:Tag.fetchRequest()), 4,
+        XCTAssertEqual(dataController.count(for: Tag.fetchRequest()), 4,
                        "There should be 4 tags after deleting 1 from samle data")
-        XCTAssertEqual(dataController.count(for:Issue.fetchRequest()), 50,
+        XCTAssertEqual(dataController.count(for: Issue.fetchRequest()), 50,
                        "There should be 50 issues after deleting 1 tag from samle data")
     }
 }
