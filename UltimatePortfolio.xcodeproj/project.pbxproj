@@ -35,6 +35,9 @@
 		76799C702A3600FC00583457 /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76799C6F2A3600FC00583457 /* AssetTests.swift */; };
 		767A783B2A645618006D0B89 /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A783A2A645618006D0B89 /* TagTests.swift */; };
 		767A783D2A648FDC006D0B89 /* AwardsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A783C2A648FDC006D0B89 /* AwardsTest.swift */; };
+		7698FFCB2A7E409D00A8D6E3 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698FFCA2A7E409D00A8D6E3 /* ExtensionsTests.swift */; };
+		7698FFCE2A7E4A5F00A8D6E3 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 7698FFCD2A7E4A5F00A8D6E3 /* DecodableDictionary.json */; };
+		7698FFD02A7E4ACD00A8D6E3 /* DecodableStrings.json in Resources */ = {isa = PBXBuildFile; fileRef = 7698FFCF2A7E4ACD00A8D6E3 /* DecodableStrings.json */; };
 		76B543DB2A21B133000E7E3D /* SidebarToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B543DA2A21B133000E7E3D /* SidebarToolbar.swift */; };
 		76B543DD2A21B6E5000E7E3D /* IssueViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B543DC2A21B6E5000E7E3D /* IssueViewToolbar.swift */; };
 		76B543DF2A21BA4F000E7E3D /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B543DE2A21BA4F000E7E3D /* ContentViewToolbar.swift */; };
@@ -88,6 +91,9 @@
 		76799C6F2A3600FC00583457 /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
 		767A783A2A645618006D0B89 /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
 		767A783C2A648FDC006D0B89 /* AwardsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsTest.swift; sourceTree = "<group>"; };
+		7698FFCA2A7E409D00A8D6E3 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		7698FFCD2A7E4A5F00A8D6E3 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		7698FFCF2A7E4ACD00A8D6E3 /* DecodableStrings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableStrings.json; sourceTree = "<group>"; };
 		76B543DA2A21B133000E7E3D /* SidebarToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarToolbar.swift; sourceTree = "<group>"; };
 		76B543DC2A21B6E5000E7E3D /* IssueViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewToolbar.swift; sourceTree = "<group>"; };
 		76B543DE2A21BA4F000E7E3D /* ContentViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewToolbar.swift; sourceTree = "<group>"; };
@@ -251,14 +257,25 @@
 		76799C662A35F9B500583457 /* UltimatePortfolioTests */ = {
 			isa = PBXGroup;
 			children = (
+				7698FFCC2A7E49FB00A8D6E3 /* Fixtures */,
 				76799C6E2A35FEE400583457 /* UltimatePortfolio.xctestplan */,
 				76799C672A35F9B500583457 /* UltimatePortfolioTests.swift */,
 				76799C6F2A3600FC00583457 /* AssetTests.swift */,
 				767A783A2A645618006D0B89 /* TagTests.swift */,
 				767A783C2A648FDC006D0B89 /* AwardsTest.swift */,
 				7639A6B22A7631C100DBAFD3 /* DevelopmentTests.swift */,
+				7698FFCA2A7E409D00A8D6E3 /* ExtensionsTests.swift */,
 			);
 			path = UltimatePortfolioTests;
+			sourceTree = "<group>";
+		};
+		7698FFCC2A7E49FB00A8D6E3 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				7698FFCD2A7E4A5F00A8D6E3 /* DecodableDictionary.json */,
+				7698FFCF2A7E4ACD00A8D6E3 /* DecodableStrings.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +374,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7698FFD02A7E4ACD00A8D6E3 /* DecodableStrings.json in Resources */,
+				7698FFCE2A7E4A5F00A8D6E3 /* DecodableDictionary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76799C702A3600FC00583457 /* AssetTests.swift in Sources */,
+				7698FFCB2A7E409D00A8D6E3 /* ExtensionsTests.swift in Sources */,
 				767A783D2A648FDC006D0B89 /* AwardsTest.swift in Sources */,
 				767A783B2A645618006D0B89 /* TagTests.swift in Sources */,
 				76799C682A35F9B500583457 /* UltimatePortfolioTests.swift in Sources */,
