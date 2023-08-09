@@ -136,7 +136,7 @@ final class ExtensionsTests: BaseTestCase {
     func testDecodingString(){
         let bundle = Bundle(for: ExtensionsTests.self)
         let data = bundle.decode("DecodableStrings.json", as: String.self)
-        XCTAssertEqual(data, "Poszły konie po betonie", "The strings mus match DecodableStrings.json")
+        XCTAssertEqual(data, "Poszły konie po betonie", "The strings must match DecodableStrings.json")
     }
 
     func testDecodingDictionary() {
