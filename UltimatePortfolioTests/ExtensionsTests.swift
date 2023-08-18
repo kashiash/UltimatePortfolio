@@ -133,7 +133,7 @@ final class ExtensionsTests: BaseTestCase {
         XCTAssertFalse(awards.isEmpty, "Awards.json should decode to a non-empty array.")
     }
 
-    func testDecodingString(){
+    func testDecodingString() {
         let bundle = Bundle(for: ExtensionsTests.self)
         let data = bundle.decode("DecodableStrings.json", as: String.self)
         XCTAssertEqual(data, "Poszły konie po betonie", "The strings must match DecodableStrings.json")
