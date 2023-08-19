@@ -102,6 +102,7 @@ class DataController: ObservableObject {
             if let error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
+            
             #if DEBUG
             if CommandLine.arguments.contains("enable-testing") {
                 self.deleteAll()
