@@ -23,6 +23,13 @@
         "identifier" : "76799C642A35F9B500583457",
         "name" : "UltimatePortfolioTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:UltimatePortfolio.xcodeproj",
+        "identifier" : "7656F65A2A91255F00E2E3D4",
+        "name" : "UltimatePortfolioUITests"
+      }
     }
   ],
   "version" : 1

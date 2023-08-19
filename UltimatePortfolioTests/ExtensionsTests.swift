@@ -123,6 +123,10 @@ final class ExtensionsTests: BaseTestCase {
         let allTags = [tag1, tag2, tag3]
         let sortedTags = allTags.sorted()
 
+        XCTAssertEqual(tag3, sortedTags[0], "Sorting tag arrays should use name then UUID string.")
+        XCTAssertEqual(tag1, sortedTags[1], "Sorting tag arrays should use name then UUID string.")
+      //  XCTAssertEqual(tag2, sortedTags[2], "Sorting tag arrays should use name then UUID string.")
+
         XCTAssertEqual([tag3, tag1, tag2], sortedTags, "Sorting tag arrays should use name then UUID string.")
     }
 
