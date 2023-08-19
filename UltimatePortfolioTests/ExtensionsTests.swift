@@ -59,7 +59,6 @@ final class ExtensionsTests: BaseTestCase {
         XCTAssertEqual(issue.issueTagsList, "My Tag", "Adding 1 tag to an issue should make issueTagsList be My Tag.")
     }
 
-
     func testIssueSortingIsStable() {
         let issue1 = Issue(context: managedObjectContext)
         issue1.title = "B Issue"
@@ -78,7 +77,6 @@ final class ExtensionsTests: BaseTestCase {
 
         XCTAssertEqual([issue3, issue1, issue2], sorted, "Sorting issue arrays should use name then creation date.")
     }
-
 
     func testTagIdUnwrap() {
         let tag = Tag(context: managedObjectContext)
