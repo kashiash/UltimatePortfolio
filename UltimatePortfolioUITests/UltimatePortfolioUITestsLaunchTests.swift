@@ -2,7 +2,7 @@
 //  UltimatePortfolioUITestsLaunchTests.swift
 //  UltimatePortfolioUITests
 //
-//  Created by Jacek Kosinski U on 18/08/2023.
+//  Created by Jacek Kosinski U on 19/08/2023.
 //
 
 import XCTest
