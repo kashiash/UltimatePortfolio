@@ -9,6 +9,12 @@
     }
   ],
   "defaultOptions" : {
+    "language" : "en",
+    "locationScenario" : {
+      "identifier" : "London, England",
+      "referenceType" : "built-in"
+    },
+    "region" : "GB",
     "targetForVariableExpansion" : {
       "containerPath" : "container:UltimatePortfolio.xcodeproj",
       "identifier" : "3F0E1B1629AA29780068FC88",
