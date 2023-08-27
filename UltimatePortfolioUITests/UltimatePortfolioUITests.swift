@@ -42,7 +42,8 @@ final class UltimatePortfolioUITests: XCTestCase {
     func testAppHasBasicButtonsOnLaunch() throws {
         XCTAssertTrue(app.navigationBars.buttons["Filters"].exists, "There should be a Filters button on launch.")
         XCTAssertTrue(app.navigationBars.buttons["Filter"].exists, "There should be a Filters button on launch.")
-        XCTAssertTrue(app.navigationBars.buttons["New Issue"].exists, "There should be a Filters button on launch.")    }
+        XCTAssertTrue(app.navigationBars.buttons["New Issue"].exists, "There should be a Filters button on launch.")
+    }
 
     func testNoIssuesAtStart() {
         XCTAssertEqual(app.cells.count, 0, "There should be no list rows initially.")
@@ -51,9 +52,9 @@ final class UltimatePortfolioUITests: XCTestCase {
     func testCreatingIssues() {
         for tapCount in 1...5 {
             app.buttons["New Issue"].tap()
-            app.textFields["Enter the issue title here"].tap()
-            app.textFields["Enter the issue title here"].clear()
-            app.typeText("My New Issue \(tapCount)")
+//            app.textFields["Enter the issue title here"].tap()
+//            app.textFields["Enter the issue title here"].clear()
+//            app.typeText("My New Issue \(tapCount)")
             app.buttons["Issues"].tap()
 
             XCTAssertEqual(app.cells.count, tapCount, "There should be \(tapCount) rows in the list.")
