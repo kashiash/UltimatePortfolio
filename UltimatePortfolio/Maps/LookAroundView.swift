@@ -23,7 +23,8 @@ struct LookAroundView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: MKLookAroundViewController, context: Context) {
         if let tappedLocation = tappedLocation {
             Task {
-                if let scene = await getScene(tappedLocation: .init(latitude: tappedLocation.latitude, longitude: tappedLocation.longitude)) {
+                if let scene = await getScene(tappedLocation:
+                        .init(latitude: tappedLocation.latitude, longitude: tappedLocation.longitude)) {
                     withAnimation {
                         self.showLookAroundView = true
                         uiViewController.scene = scene
@@ -41,7 +42,6 @@ struct LookAroundView: UIViewControllerRepresentable {
     func getScene(tappedLocation: CLLocationCoordinate2D?) async -> MKLookAroundScene? {
         if let lat = tappedLocation?.latitude, let long = tappedLocation?.longitude {
             let sceneRequest = MKLookAroundSceneRequest(coordinate: .init(latitude: lat, longitude: long))
-
             do {
                 return try await sceneRequest.scene
             } catch {
@@ -53,4 +53,3 @@ struct LookAroundView: UIViewControllerRepresentable {
         }
     }
 }
-

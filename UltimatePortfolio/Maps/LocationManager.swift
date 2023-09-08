@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-final class LocationManager: NSObject,ObservableObject,CLLocationManagerDelegate {
+final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
 
     @Published var userLocation: CLLocationCoordinate2D?

@@ -20,7 +20,8 @@ struct MapView: UIViewRepresentable {
         let mapView = MKMapView()
         mapView.showsUserLocation = true
 
-        let tapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(MapViewCoordinator.tappedOnMap(_:)))
+        let tapGesture = UITapGestureRecognizer(target: context.coordinator,
+                                                action: #selector(MapViewCoordinator.tappedOnMap(_:)))
 
         mapView.addGestureRecognizer(tapGesture)
 
@@ -36,7 +37,7 @@ struct MapView: UIViewRepresentable {
 
             if let userLocation = locationManager.userLocation {
                 let userAnnotation = MKPointAnnotation()
-                annotation.coordinate = .init(latitude:userLocation.latitude,longitude: userLocation.longitude)
+                annotation.coordinate = .init(latitude: userLocation.latitude, longitude: userLocation.longitude)
                 mapView.addAnnotation(userAnnotation)
             }
         }
@@ -46,7 +47,7 @@ struct MapView: UIViewRepresentable {
 
     func updateUIView(_ uiView: MKMapView, context: Context) {
 
-        if uiView.delegate != nil  {return}
+        if uiView.delegate != nil  { return }
         if let tappedLocation = tappedLocation {
             uiView.setRegion(.init(center: tappedLocation, latitudinalMeters: 400, longitudinalMeters: 400), animated: false)
             uiView.delegate = context.coordinator
@@ -69,7 +70,7 @@ final class MapViewCoordinator: NSObject, MKMapViewDelegate {
         self._tappedLocation = tappedLocation
     }
 
-    @objc func tappedOnMap(_ sender:UITapGestureRecognizer){
+    @objc func tappedOnMap(_ sender:UITapGestureRecognizer) {
         guard let mapView = sender.view as? MKMapView else { return }
 
         let touchLocation = sender.location(in: sender.view)

@@ -28,6 +28,7 @@
 		3FFD901B29E21CD70064EEE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD901929E21CD70064EEE0 /* Colors.xcassets */; };
 		3FFD901D29E21D130064EEE0 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD901C29E21D130064EEE0 /* Award.swift */; };
 		3FFD901F29E21D3C0064EEE0 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD901E29E21D3C0064EEE0 /* AwardsView.swift */; };
+		76034A0B2AABB09700EDC2F7 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76034A0A2AABB09700EDC2F7 /* SidebarViewModel.swift */; };
 		7639A6B32A7631C100DBAFD3 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639A6B22A7631C100DBAFD3 /* DevelopmentTests.swift */; };
 		7656F65E2A91255F00E2E3D4 /* UltimatePortfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656F65D2A91255F00E2E3D4 /* UltimatePortfolioUITests.swift */; };
 		7656F6602A91255F00E2E3D4 /* UltimatePortfolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656F65F2A91255F00E2E3D4 /* UltimatePortfolioUITestsLaunchTests.swift */; };
@@ -95,6 +96,7 @@
 		3FFD901929E21CD70064EEE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3FFD901C29E21D130064EEE0 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		3FFD901E29E21D3C0064EEE0 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		76034A0A2AABB09700EDC2F7 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
 		7639A6B22A7631C100DBAFD3 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		7656F65B2A91255F00E2E3D4 /* UltimatePortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7656F65D2A91255F00E2E3D4 /* UltimatePortfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioUITests.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				3FCEE15029AAC7A300C52773 /* Filter.swift */,
 				76B543DA2A21B133000E7E3D /* SidebarToolbar.swift */,
 				3FCEE14C29AAC5C100C52773 /* SidebarView.swift */,
+				76034A0A2AABB09700EDC2F7 /* SidebarViewModel.swift */,
 				76B543E22A21C12B000E7E3D /* SmartFilterRow.swift */,
 				76799C5F2A35E08500583457 /* UserFilterRow.swift */,
 			);
@@ -514,6 +517,7 @@
 				76B543E12A21BF2A000E7E3D /* TagsMenuView.swift in Sources */,
 				3F33D7C329AB7C7E00D16759 /* IssueView.swift in Sources */,
 				3F0E1B1B29AA29780068FC88 /* UltimatePortfolioApp.swift in Sources */,
+				76034A0B2AABB09700EDC2F7 /* SidebarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
