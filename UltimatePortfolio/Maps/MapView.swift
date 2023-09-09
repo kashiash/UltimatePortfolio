@@ -25,11 +25,10 @@ struct MapView: UIViewRepresentable {
 
         mapView.addGestureRecognizer(tapGesture)
 
-
         if let locationCoorinate = tappedLocation {
 
             let annotation = MKPointAnnotation()
-            annotation.coordinate = .init(latitude:locationCoorinate.latitude,longitude: locationCoorinate.longitude)
+            annotation.coordinate = .init(latitude: locationCoorinate.latitude, longitude: locationCoorinate.longitude)
             self.tappedLocation = locationCoorinate
 
             mapView.removeAnnotations(mapView.annotations)
@@ -47,9 +46,10 @@ struct MapView: UIViewRepresentable {
 
     func updateUIView(_ uiView: MKMapView, context: Context) {
 
-        if uiView.delegate != nil  { return }
+        if uiView.delegate != nil { return }
         if let tappedLocation = tappedLocation {
-            uiView.setRegion(.init(center: tappedLocation, latitudinalMeters: 400, longitudinalMeters: 400), animated: false)
+            uiView.setRegion(.init(center: tappedLocation, latitudinalMeters: 400,
+                                   longitudinalMeters: 400), animated: false)
             uiView.delegate = context.coordinator
         } else {
         }
@@ -70,14 +70,14 @@ final class MapViewCoordinator: NSObject, MKMapViewDelegate {
         self._tappedLocation = tappedLocation
     }
 
-    @objc func tappedOnMap(_ sender:UITapGestureRecognizer) {
+    @objc func tappedOnMap(_ sender: UITapGestureRecognizer) {
         guard let mapView = sender.view as? MKMapView else { return }
 
         let touchLocation = sender.location(in: sender.view)
-        let locationCoorinate = mapView.convert(touchLocation,toCoordinateFrom: sender.view)
+        let locationCoorinate = mapView.convert(touchLocation, toCoordinateFrom: sender.view)
 
         let annotation = MKPointAnnotation()
-        annotation.coordinate = .init(latitude:locationCoorinate.latitude,longitude: locationCoorinate.longitude)
+        annotation.coordinate = .init(latitude: locationCoorinate.latitude, longitude: locationCoorinate.longitude)
         self.tappedLocation = locationCoorinate
 
         mapView.removeAnnotations(mapView.annotations)

@@ -8,7 +8,6 @@
 import CoreData
 import Foundation
 
-
 extension SidebarView {
     class ViewModel: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {
         var dataController: DataController
