@@ -46,6 +46,9 @@
 		7698FFCE2A7E4A5F00A8D6E3 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 7698FFCD2A7E4A5F00A8D6E3 /* DecodableDictionary.json */; };
 		7698FFD02A7E4ACD00A8D6E3 /* DecodableStrings.json in Resources */ = {isa = PBXBuildFile; fileRef = 7698FFCF2A7E4ACD00A8D6E3 /* DecodableStrings.json */; };
 		7698FFD22A7E4E4A00A8D6E3 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698FFD12A7E4E4A00A8D6E3 /* PerformanceTests.swift */; };
+		76B3194A2AD9E52C00AF1E86 /* Przenoszenie naszego projektu SwiftUI do MVVM, część 1.md in Resources */ = {isa = PBXBuildFile; fileRef = 76B319482AD9E52C00AF1E86 /* Przenoszenie naszego projektu SwiftUI do MVVM, część 1.md */; };
+		76B3194B2AD9E52C00AF1E86 /* Przenoszenie MVVM do naszego projektu SwiftUI, część 2W tym artykule będziemy kontynuować naszą drogę do MVVM, tym razem.md in Resources */ = {isa = PBXBuildFile; fileRef = 76B319492AD9E52C00AF1E86 /* Przenoszenie MVVM do naszego projektu SwiftUI, część 2W tym artykule będziemy kontynuować naszą drogę do MVVM, tym razem.md */; };
+		76B3194D2AD9E53E00AF1E86 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 76B3194C2AD9E53E00AF1E86 /* Readme.md */; };
 		76B543DB2A21B133000E7E3D /* SidebarToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B543DA2A21B133000E7E3D /* SidebarToolbar.swift */; };
 		76B543DD2A21B6E5000E7E3D /* IssueViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B543DC2A21B6E5000E7E3D /* IssueViewToolbar.swift */; };
 		76B543DF2A21BA4F000E7E3D /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B543DE2A21BA4F000E7E3D /* ContentViewToolbar.swift */; };
@@ -120,6 +123,9 @@
 		7698FFCD2A7E4A5F00A8D6E3 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		7698FFCF2A7E4ACD00A8D6E3 /* DecodableStrings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableStrings.json; sourceTree = "<group>"; };
 		7698FFD12A7E4E4A00A8D6E3 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		76B319482AD9E52C00AF1E86 /* Przenoszenie naszego projektu SwiftUI do MVVM, część 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Przenoszenie naszego projektu SwiftUI do MVVM, część 1.md"; sourceTree = SOURCE_ROOT; };
+		76B319492AD9E52C00AF1E86 /* Przenoszenie MVVM do naszego projektu SwiftUI, część 2W tym artykule będziemy kontynuować naszą drogę do MVVM, tym razem.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Przenoszenie MVVM do naszego projektu SwiftUI, część 2W tym artykule będziemy kontynuować naszą drogę do MVVM, tym razem.md"; sourceTree = SOURCE_ROOT; };
+		76B3194C2AD9E53E00AF1E86 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = SOURCE_ROOT; };
 		76B543DA2A21B133000E7E3D /* SidebarToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarToolbar.swift; sourceTree = "<group>"; };
 		76B543DC2A21B6E5000E7E3D /* IssueViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewToolbar.swift; sourceTree = "<group>"; };
 		76B543DE2A21BA4F000E7E3D /* ContentViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewToolbar.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 		3F0E1B0E29AA29780068FC88 = {
 			isa = PBXGroup;
 			children = (
+				76B319472AD9E50D00AF1E86 /* Docs */,
 				7656F6662A912D5300E2E3D4 /* UltimatePortfolioUITests */,
 				3F0E1B1929AA29780068FC88 /* UltimatePortfolio */,
 				76799C662A35F9B500583457 /* UltimatePortfolioTests */,
@@ -329,6 +336,16 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		76B319472AD9E50D00AF1E86 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				76B3194C2AD9E53E00AF1E86 /* Readme.md */,
+				76B319492AD9E52C00AF1E86 /* Przenoszenie MVVM do naszego projektu SwiftUI, część 2W tym artykule będziemy kontynuować naszą drogę do MVVM, tym razem.md */,
+				76B319482AD9E52C00AF1E86 /* Przenoszenie naszego projektu SwiftUI do MVVM, część 1.md */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
 		76DCBC3E2A9B7D7500A56B41 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,10 +464,13 @@
 			files = (
 				3F0E1B2329AA29790068FC88 /* Preview Assets.xcassets in Resources */,
 				3FBC7F482A083F5200E5A3FC /* Localizable.strings in Resources */,
+				76B3194B2AD9E52C00AF1E86 /* Przenoszenie MVVM do naszego projektu SwiftUI, część 2W tym artykule będziemy kontynuować naszą drogę do MVVM, tym razem.md in Resources */,
+				76B3194A2AD9E52C00AF1E86 /* Przenoszenie naszego projektu SwiftUI do MVVM, część 1.md in Resources */,
 				3FFD901B29E21CD70064EEE0 /* Colors.xcassets in Resources */,
 				3FFD901A29E21CD70064EEE0 /* Awards.json in Resources */,
 				3F0E1B1F29AA29790068FC88 /* Assets.xcassets in Resources */,
 				3FBC7F4B2A083F5800E5A3FC /* Localizable.stringsdict in Resources */,
+				76B3194D2AD9E53E00AF1E86 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
