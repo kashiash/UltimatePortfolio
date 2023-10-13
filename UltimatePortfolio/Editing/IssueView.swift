@@ -77,6 +77,11 @@ struct IssueView: View {
                         Label("Around", systemImage: "binoculars")
                     }
             }
+            MeView()
+            .tabItem {
+                Label("QRCode", systemImage: "qrcode")
+            }
+
         }
         .onAppear {
             getCoordinate(from: issue.issueTaskAddress) { coordinate in
@@ -96,6 +101,8 @@ struct IssueView: View {
             completion(location.coordinate)
         }
     }
+
+    
 }
 
 struct IssueView_Previews: PreviewProvider {
